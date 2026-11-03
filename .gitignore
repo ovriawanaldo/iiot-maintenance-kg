@@ -1,0 +1,20 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Environment and secrets (Neo4j password etc.)
+.env
+
+# Local Neo4j data if run with a mounted volume
+neo4j/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Logs
+*.log

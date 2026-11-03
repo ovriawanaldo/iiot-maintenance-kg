@@ -1,0 +1,5 @@
+machine_id,line_id,udi_from,udi_to,cycles,machine_model
+CNC-01,LINE-A,1,2500,2500,Haas VF-2 (40-taper vertical mill)
+CNC-02,LINE-A,2501,5000,2500,Haas VF-2 (40-taper vertical mill)
+CNC-03,LINE-B,5001,7500,2500,Haas VF-2 (40-taper vertical mill)
+CNC-04,LINE-B,7501,10000,2500,Haas VF-2 (40-taper vertical mill)
