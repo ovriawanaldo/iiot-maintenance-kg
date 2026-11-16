@@ -32,6 +32,7 @@ notebooks/        Jupyter notebooks for exploration and the defence demo
 docs/
   proposal/       accepted project proposal (PDF)
   schema/         schema diagram
+  figures/        Neo4j Browser screenshots of the Task 1 graph
 ```
 
 ## Data sources
@@ -168,6 +169,19 @@ C4 cardinalities (each event one machine and one source row, failures at least o
 C5 source and derivation on every node and relationship, C6 graph counts equal to `events.csv`.
 Manual check: `reports/manual_verification_sample.csv` lists 20 random events (seed 2026) with the graph
 values next to the raw AI4I values; I open each AI4I row and write OK/WRONG in `checked_by_hand`.
+
+## Task 1 graph in Neo4j Browser
+
+Failure event EVT-03237 with its machine, line, failure mode, KPIs, scrapped product and AI4I source row
+(query: `MATCH p = (l:ProductionLine)<-[:PART_OF]-(m:Machine)<-[:OCCURRED_ON]-(e:Failure {event_id: "EVT-03237"})-[r]->(x) RETURN p, e, r, x`).
+
+| Screenshot | Shows |
+|---|---|
+| [`task1_graph_event_evt03237_1.png`](docs/figures/task1_graph_event_evt03237_1.png) | event properties, part 1: `derivation = constructed`, downtime, computed properties |
+| [`task1_graph_event_evt03237_2.png`](docs/figures/task1_graph_event_evt03237_2.png) | event properties, part 2: AI4I sensor values (`sensor_values_derivation = stated`), source, timestamp |
+| [`task1_graph_failuremode_hdf.png`](docs/figures/task1_graph_failuremode_hdf.png) | FailureMode HDF with the AI4I rule and its source |
+
+![EVT-03237 in Neo4j Browser](docs/figures/task1_graph_event_evt03237_1.png)
 
 ## Task 1 questions
 
