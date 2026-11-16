@@ -1,0 +1,24 @@
+[OK  ] events total: proposal 458 | data 458
+[OK  ] FAILURE events: proposal 339 | data 339
+[OK  ] TOOL_CHANGE events: proposal 119 | data 119
+[OK  ] UNSPECIFIED failures: proposal 9 | data 9
+[OK  ] rejected rows: proposal 18 | data 18
+[OK  ] Q1 LINE-A downtime: proposal 10505 | data 10505
+[OK  ] Q1 LINE-A failures: proposal 235 | data 235
+[OK  ] Q1 LINE-B downtime: proposal 4245 | data 4245
+[OK  ] Q1 LINE-B failures: proposal 104 | data 104
+[OK  ] Q1 HDF downtime on LINE-A: proposal 5220 | data 5220
+[OK  ] Q2 machines with HDF: proposal CNC-02 | data CNC-02
+[OK  ] Q2 HDF events: proposal 115 | data 115
+[OK  ] Q3 OSF scrapped, variant L: proposal 87 | data 87
+[OK  ] Q3 OSF scrapped, total: proposal 98 | data 98
+[OK  ] Q3 OSF L on LINE-A: proposal 48 | data 48
+[OK  ] Q3 OSF variant M: proposal 9 | data 9
+[OK  ] Q3 OSF variant H: proposal 2 | data 2
+[OK  ] Q4 multi-mode events: proposal 24 | data 24
+[OK  ] Q4 events with exactly OSF+PWF: proposal 11 | data 11
+[OK  ] Q4 events with HDF and another mode (all on CNC-02): proposal 9 / CNC-02 | data 9 / CNC-02
+[OK  ] Q5 PWF high (> 9000 W): proposal 64 | data 64
+[OK  ] Q5 PWF low (< 3500 W): proposal 31 | data 31
+[OK  ] Q6 tool changes CNC-01/02/03/04: proposal 29/30/29/31 | data 29/30/29/31
+[OK  ] Q6 TWF CNC-01/02/03/04: proposal 8/13/12/13 | data 8/13/12/13

@@ -21,7 +21,7 @@
 
 Built from `raw/ai4i2020.csv` by `scripts/build_events.py`. The script uses no random numbers, so it always produces the same files.
 
-**`events.csv`**: 458 events (339 FAILURE, 119 TOOL_CHANGE), 20 columns.
+**`events.csv`**: 458 events (339 FAILURE, 119 TOOL_CHANGE), 23 columns. The first 20 are the Checkpoint 1 columns (same values and row order); the last 3 were added in Task 1.
 
 | Column | Origin | Rule |
 |---|---|---|
@@ -35,7 +35,9 @@ Built from `raw/ai4i2020.csv` by `scripts/build_events.py`. The script uses no r
 | kpi_affected, scrap_parts | constructed | Failure → Availability and Quality, 1 scrapped part; tool change → Availability |
 | product_id, product_type, air_temp_k, process_temp_k, rpm, torque_nm, tool_wear_min | AI4I | Copied unchanged |
 | temp_delta_k, power_w | computed | process − air temperature; torque × rpm × 2π / 60 |
+| source_file, source_row | AI4I | File name and line number of the source row (header = line 1) |
+| tool_wear_before_min | AI4I | Tool changes only: tool wear of the previous cycle of the same machine, i.e. the wear at which the tool was changed |
 
 **`machines.csv`**: the four machines, their UDI range, cycle count and (assumed) machine model.
 
-**`rejected_records.csv`**: 18 AI4I rows with a failure-mode flag but `Machine failure = 0`. They do not fit the schema and are kept here instead of being dropped silently.
+**`rejected_records.csv`**: AI4I rows that do not fit the schema, kept here instead of being dropped silently: `source_udi`, `reason`, `flags`, `source_row`, then the original values. In AI4I these are 18 rows with a failure-mode flag (all RNF) but `Machine failure = 0`. The script also rejects missing or non-numeric values, flags other than 0/1, unknown product types, duplicate UDIs and UDIs outside 1–10,000; none occur in AI4I.
