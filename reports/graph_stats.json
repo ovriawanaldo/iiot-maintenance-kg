@@ -1,0 +1,128 @@
+{
+  "total_nodes": 1270,
+  "total_relationships": 2763,
+  "nodes_by_label": [
+    {
+      "label": "Event",
+      "count": 458
+    },
+    {
+      "label": "Failure",
+      "count": 339
+    },
+    {
+      "label": "FailureMode",
+      "count": 6
+    },
+    {
+      "label": "KPI",
+      "count": 2
+    },
+    {
+      "label": "Machine",
+      "count": 4
+    },
+    {
+      "label": "MachineModel",
+      "count": 1
+    },
+    {
+      "label": "Product",
+      "count": 339
+    },
+    {
+      "label": "ProductVariant",
+      "count": 3
+    },
+    {
+      "label": "ProductionLine",
+      "count": 2
+    },
+    {
+      "label": "SourceRecord",
+      "count": 455
+    },
+    {
+      "label": "ToolChange",
+      "count": 119
+    }
+  ],
+  "relationships_by_type": [
+    {
+      "type": "AFFECTS_KPI",
+      "count": 797
+    },
+    {
+      "type": "DERIVED_FROM",
+      "count": 458
+    },
+    {
+      "type": "HAS_FAILURE_MODE",
+      "count": 364
+    },
+    {
+      "type": "INSTANCE_OF",
+      "count": 4
+    },
+    {
+      "type": "OCCURRED_ON",
+      "count": 458
+    },
+    {
+      "type": "OF_VARIANT",
+      "count": 339
+    },
+    {
+      "type": "PART_OF",
+      "count": 4
+    },
+    {
+      "type": "SCRAPPED",
+      "count": 339
+    }
+  ],
+  "events_per_machine": [
+    {
+      "machine": "CNC-01",
+      "events": 93
+    },
+    {
+      "machine": "CNC-02",
+      "events": 201
+    },
+    {
+      "machine": "CNC-03",
+      "events": 78
+    },
+    {
+      "machine": "CNC-04",
+      "events": 86
+    }
+  ],
+  "events_per_failure_mode": [
+    {
+      "mode": "HDF",
+      "events": 115
+    },
+    {
+      "mode": "OSF",
+      "events": 98
+    },
+    {
+      "mode": "PWF",
+      "events": 95
+    },
+    {
+      "mode": "RNF",
+      "events": 1
+    },
+    {
+      "mode": "TWF",
+      "events": 46
+    },
+    {
+      "mode": "UNSPECIFIED",
+      "events": 9
+    }
+  ]
+}

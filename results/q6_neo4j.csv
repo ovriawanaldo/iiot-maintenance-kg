@@ -1,0 +1,5 @@
+machine_id,tool_changes,change_wear_min,change_wear_max,twf_failures,twf_wear_min,twf_wear_max
+CNC-01,29,198,240,8,198,225
+CNC-02,30,203,246,13,203,246
+CNC-03,29,202,253,12,205,253
+CNC-04,31,200,246,13,200,232

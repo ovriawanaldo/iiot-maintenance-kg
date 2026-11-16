@@ -1,0 +1,3 @@
+line_id,failures,downtime_min,top_mode,top_mode_downtime_min
+LINE-A,235,10505,HDF,5220
+LINE-B,104,4245,PWF,2220

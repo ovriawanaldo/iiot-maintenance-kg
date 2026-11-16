@@ -1,0 +1,2 @@
+machine_id,line_id,hdf_events,downtime_min,max_temp_delta_k,max_rpm
+CNC-02,LINE-A,115,5220,8.6,1379
